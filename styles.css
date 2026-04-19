@@ -266,10 +266,15 @@ h1, h2, h3 {
   gap: 24px;
 }
 
-.section-media img {
+.section-image,
+.section-media img,
+.hero-image img {
   width: 100%;
-  height: auto;
-  border-radius: var(--card-radius);
+  max-height: 280px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 12px;
 }
 
 .section-layout-image-left .section-inner,
@@ -609,6 +614,7 @@ h1, h2, h3 {
   .section-media img {
     width: 100%;
     height: auto;
+    max-height: 200px;
   }
 
   .card-grid,
